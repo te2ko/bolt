@@ -1,3 +1,16 @@
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.text__center {
+  text-align: center;
+}
+
+.font {
+  font-family: 'Lato';
+  line-height: 30px;
+}
 
 .h1__text {
   font-size: 24px;
@@ -10,23 +23,22 @@
   clear: both;
 }
 
-.center__parent {
-  position: relative;
-  left: 50%;
-  float: left;
+.ul__img__center {
+  text-align: center;
 }
 
-.center__child {
-  position: relative;
-  left: -50%;
-  float: left;
+.ul__img__center li {
+  display: inline-block;
 }
 
-
+.hidden__icon {
+  display: none;
+}
 
 
 body {
   background-color: #f2f2f2;
+  font-family: 'Raleway';
 }
 
 header {
@@ -36,6 +48,7 @@ header {
   padding: 15px 0 15px 0;
   background-color: #fff;
 }
+
 
 .bolt {
   float: left;
@@ -51,16 +64,12 @@ header {
   background-color: #74cfae;
   transition: 0.3s;
   color: #fff;
+  text-decoration: none;
 }
 
 .contact:hover {
   transition: 0.3s;
   color: #333;
-}
-
-.header__box {
-  margin: 0 auto;
-  width: 1100px;
 }
 
 main {
@@ -77,26 +86,33 @@ main {
   text-align: center;
   color: #74cfae;
 }
-.header__title:after {
+.title:after {
   display: block;
   content: "FREE BOOTSRRAP THEMES";
   padding-top: 30px;
   font-size: 30px;
   color: #c0c0c0;
+  font-weight: normal;
 }
 
 .phone__bg {
   padding-top: 50px;
   background-color: #74cfae;
 }
+.img__box {
+  width: 407px;
+}
 
-.text__center {
-  text-align: center;
+.box__left {
+  float: left;
+}
+
+.box__right {
+  float: right;
 }
 
 .phone__text {
-  width: 750px;
-  margin-left: 150px;
+  width: 660px;
   color: #fff;
 }
 
@@ -108,6 +124,7 @@ main {
 .phone__text p {
   font-size: 20px;
 }
+
 
 .article__bg {
   padding: 60px 0 70px 0;
@@ -139,8 +156,21 @@ main {
   margin-top: 80px;
 }
 
+.center__parent {
+  position: relative;
+  left: 50%;
+  float: left;
+}
+
+.center__child {
+  position: relative;
+  left: -50%;
+  float: left;
+}
+
+
 .work__image__box__text {
-  width: 652px;
+  width: 550px;
 }
 
 .buttonbox {
@@ -151,6 +181,7 @@ main {
   font-size: 14px;
   transition: 0.3s;
   color: #fff;
+  text-decoration: none;
 }
 
 .buttonbox:hover {
@@ -165,7 +196,6 @@ main {
 }
 
 .circle__box ul {
-  display: flex;
   margin-top: 100px;
 }
 
@@ -174,7 +204,6 @@ main {
 }
 
 .circle__box ul li p {
-  margin-top: 10px;
   text-align: center;
   font-size: 14px;
 }
@@ -193,13 +222,10 @@ nav {
   padding: 20px 0 20px 0;
   text-align: center;
   color: #74cfae;
+  text-align: center;
 }
 
-.icon__box {
-  display: flex;
-}
-
-.icon__box li a {
+.nav__list .ul__img__center li a {
   transition: 0.3s;
   display: block;
   position: relative;
@@ -209,7 +235,7 @@ nav {
   height: 100%;
 }
 
-.icon__box li a:hover{
+.nav__list .ul__img__center li a:hover{
   transition: 0.3s;
   background-color: #fff;
   cursor: pointer;
@@ -221,11 +247,119 @@ footer {
   color: #fff;
 }
 
-footer div {
-  margin: 0 auto;
-  width: 1100px;
-}
-
 footer p {
   text-align: right;
+}
+
+/* ---タブレットのスタイル--- */
+
+@media screen and (max-width: 1199px) {
+
+  .inner {
+    width: 97%;
+  }
+
+  .hidden__icon{
+    display: none;
+  }
+
+  .phone__bg {
+    padding: 50px 0 25px 0;
+  }
+
+  .box__left,.box__right {
+    float: none;
+  }
+
+  .phone__text {
+    margin: 20px 0 30px 0;
+    width: 100%;
+  }
+
+  .work__image__box {
+    margin-top: 40px;
+    width: 100%
+  }
+
+  .work__image__box ul {
+    display: initial;
+    flex-wrap: initial;
+    justify-content: initial;
+    text-align: center;
+    font-size: 0;
+  }
+
+  .work__image__box ul li:nth-child(n+4) {
+    margin-top: initial;
+  }
+
+  .work__image__box ul li:nth-child(4)  {
+    margin-top: 80px;
+  }
+  
+  .work__image__box .cleafix::after {
+    content: initial;
+    display: initial;
+    clear: initial;
+  }
+
+  .work__image__box__text {
+    margin: 80px 0 40px 0;
+    display: inline-block;
+  }
+
+  .work__image__box .center__child,.work__image__box .center__parent {
+    position: initial;
+    left: initial;
+    float: none;
+  }
+
+  .pad__image__box {
+  text-align: center;
+  }
+
+  .buttonbox {
+   margin: initial;
+  }
+
+  .circle__box ul li {
+    margin: 88px 0 0 0;
+  }
+
+  .circle__box .ul__img__center li {
+    display: block;
+  }
+  
+}
+
+/* ---タブレットのスタイル--- */
+
+
+
+/* ---spスタイル--- */
+@media screen and (max-width: 767px) {
+  .contact {
+    display: none;
+  }
+
+  .hidden__icon {
+    display: block;
+  }
+
+  .menu__icon {
+    float: right;
+    font-size: 50px;
+  }
+
+  .img__box {
+    width: initial;
+  }
+
+  nav {
+    padding: 50px 0px 50px 0px;
+  }
+
+  nav .ul__img__center li {
+    display: block;
+  }
 }
