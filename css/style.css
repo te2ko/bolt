@@ -234,6 +234,7 @@ main {
 
 .nav__list__center {
   text-align: center;
+  font-size: 0;
 }
 
 .nav__list {
@@ -287,8 +288,8 @@ main {
 
   .phone__container {
     display: inline-block;
+    width: 100%;
     margin-top: 20px;
-    width: 850px; 
   }
 
   .phone__text {
@@ -323,9 +324,13 @@ main {
     margin-bottom: 40px;
   }
 
+  .center__child:last-child {
+    margin-bottom: 0;
+  }
+
   .work__image__box__text {
-    width: 800px;
     display: inline-block;
+    width: 100%;
   }
 
   .buttonbox {
@@ -389,16 +394,9 @@ main {
     width: initial;
   }
 
-  .work__image__box__text {
-    width: 270px; 
-  }
 
   .nav__bg {
     padding: 50px 0px;
-  }
-
-  .nav__list__center {
-    font-size: 0px;
   }
 
   .nav__list {
