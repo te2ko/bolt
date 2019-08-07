@@ -294,7 +294,6 @@ main {
 
   .phone__text {
     margin-top: 20px;
-    width: 100%;
   }
 
   .article__bg {
@@ -308,14 +307,13 @@ main {
     margin-bottom: 80px;
     text-align: center;
     font-size: 0;
-    width: 100%;
   }
 
   .work__image__box li:nth-child(n+4) {
     margin-top: initial;
   }
 
-  .work__image__box li:nth-child(4)  {
+  .work__image__box li:nth-child(3n+4) {
     margin-top: 80px;
   }
 
@@ -362,10 +360,10 @@ main {
 
   .hidden__icon {
     display: block;
+    float: right;
   }
 
   .menu__icon {
-    float: right;
     font-size: 50px;
     padding: 5px 10px;
     border: solid 1px #ddd;
@@ -393,8 +391,7 @@ main {
   .img__box {
     width: initial;
   }
-
-
+  
   .nav__bg {
     padding: 50px 0px;
   }
