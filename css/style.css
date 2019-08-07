@@ -1,3 +1,10 @@
+body {
+  background-color: #f2f2f2;
+  font-family: 'Raleway';
+}
+
+/* --------複数回使用するセレクタ-------- */
+
 .inner {
   width: 1100px;
   margin: 0 auto;
@@ -9,10 +16,13 @@
 
 .font {
   font-family: 'Lato';
+}
+
+.font__height {
   line-height: 30px;
 }
 
-.h1__text {
+.second__title {
   font-size: 24px;
   text-align: center;
 }
@@ -23,48 +33,43 @@
   clear: both;
 }
 
-.ul__img__center {
-  text-align: center;
-}
-
-.ul__img__center li {
-  display: inline-block;
-}
-
 .hidden__icon {
   display: none;
 }
 
+/* --------複数回使用するセレクタ-------- */
 
-body {
-  background-color: #f2f2f2;
-  font-family: 'Raleway';
-}
 
 header {
   position: fixed;
   z-index: 1;
   width: 100%;
-  padding: 15px 0 15px 0;
+  padding: 15px 0;
   background-color: #fff;
 }
 
 
 .bolt {
-  float: left;
   font-size: 50px;
   color: #333;
 }
 
+.bolt__box {
+  float: left;
+}
+
 .contact {
   display: inline-block;
-  float: right;
   padding: 14px 12px;
   font-size: 12px;
   background-color: #74cfae;
   transition: 0.3s;
   color: #fff;
   text-decoration: none;
+}
+
+.contact__box {
+  float: right;
 }
 
 .contact:hover {
@@ -77,7 +82,7 @@ main {
 }
 
 .main__title {
-  padding: 250px 0 250px 0;
+  padding: 250px 0;
 }
 
 .title {
@@ -86,9 +91,8 @@ main {
   text-align: center;
   color: #74cfae;
 }
-.title:after {
-  display: block;
-  content: "FREE BOOTSRRAP THEMES";
+
+.bolt__text {
   padding-top: 30px;
   font-size: 30px;
   color: #c0c0c0;
@@ -116,7 +120,7 @@ main {
   color: #fff;
 }
 
-.phone__text h1 {
+.phone__text h2 {
   margin-bottom: 35px;
   font-size: 24px; 
 }
@@ -131,43 +135,33 @@ main {
 }
 
 .work__image__box {
-  margin: 0 auto;
-  width: 1100px;
-}
-
-.work__image__box ul {
   margin: 40px 0 90px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.work__image__box ul li {
+.work__image__box li a {
   transition: 0.3s;
   opacity: 0.7;
 }
 
-.work__image__box ul li:hover {
+.work__image__box li a:hover {
   transition: 0.3;
   opacity: 1;
 }
 
-.work__image__box ul li:nth-child(n+4) {
+.work__image__box li:nth-child(n+4) {
   margin-top: 80px;
 }
 
 .center__parent {
-  position: relative;
-  left: 50%;
-  float: left;
+  text-align: center;
 }
 
 .center__child {
-  position: relative;
-  left: -50%;
-  float: left;
+  display: inline-block;
 }
-
 
 .work__image__box__text {
   width: 550px;
@@ -195,37 +189,51 @@ main {
   color: #fff;
 }
 
-.circle__box ul {
+.circle__box {
   margin-top: 100px;
 }
 
-.circle__box ul li {
+
+.circle__img__center {
+  text-align: center;
+}
+
+.circle__img__center li {
+  display: inline-block;
   margin-left: 180px;
 }
 
-.circle__box ul li p {
+.circle__img__center li p {
   text-align: center;
   font-size: 14px;
 }
 
-.circle__box ul li:first-child {
+.circle__img__center li:first-child {
   margin-left: 0;
 }
 
 nav {
-  padding: 200px 0 200px 0;
+  padding: 200px 0;
 }
 
 .icon__style {
   font-size: 50px;
   width: 185px;
-  padding: 20px 0 20px 0;
+  padding: 20px 0;
   text-align: center;
   color: #74cfae;
   text-align: center;
 }
 
-.nav__list .ul__img__center li a {
+.nav__img__center {
+  text-align: center;
+}
+
+.nav__img__center li {
+  display: inline-block;
+}
+
+.icon__link {
   transition: 0.3s;
   display: block;
   position: relative;
@@ -235,7 +243,7 @@ nav {
   height: 100%;
 }
 
-.nav__list .ul__img__center li a:hover{
+.icon__link:hover{
   transition: 0.3s;
   background-color: #fff;
   cursor: pointer;
@@ -271,47 +279,35 @@ footer p {
     float: none;
   }
 
+  .img__box {
+    width: initial;
+  }
+
   .phone__text {
     margin: 20px 0 30px 0;
     width: 100%;
   }
 
   .work__image__box {
-    margin-top: 40px;
-    width: 100%
-  }
-
-  .work__image__box ul {
-    display: initial;
+    display: block;
     flex-wrap: initial;
     justify-content: initial;
     text-align: center;
     font-size: 0;
+    width: 100%;
   }
 
-  .work__image__box ul li:nth-child(n+4) {
+  .work__image__box li:nth-child(n+4) {
     margin-top: initial;
   }
 
-  .work__image__box ul li:nth-child(4)  {
+  .work__image__box li:nth-child(4)  {
     margin-top: 80px;
-  }
-  
-  .work__image__box .cleafix::after {
-    content: initial;
-    display: initial;
-    clear: initial;
   }
 
   .work__image__box__text {
     margin: 80px 0 40px 0;
     display: inline-block;
-  }
-
-  .work__image__box .center__child,.work__image__box .center__parent {
-    position: initial;
-    left: initial;
-    float: none;
   }
 
   .pad__image__box {
@@ -322,11 +318,9 @@ footer p {
    margin: initial;
   }
 
-  .circle__box ul li {
-    margin: 88px 0 0 0;
-  }
-
-  .circle__box .ul__img__center li {
+  .circle__img__center li {
+    margin-top: 88px;
+    margin-left: 0px;
     display: block;
   }
   
@@ -356,10 +350,14 @@ footer p {
   }
 
   nav {
-    padding: 50px 0px 50px 0px;
+    padding: 50px 0px;
   }
 
-  nav .ul__img__center li {
+  .nav__img__center {
+    font-size: 0px;
+  }
+
+  .nav__img__center li {
     display: block;
   }
 }
